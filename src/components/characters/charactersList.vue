@@ -24,27 +24,10 @@ export default {
   </div>
   <div class="container mt-4">
     <div class="row row-cols-lg-5">
-      <!-- <div
-        class="col-3 card"
-        v-for="character in characters"
-        :key="character.id"
-      >
-        <img
-          v-for="img in character.card_images"
-          :src="img.image_url_small"
-          alt="img"
-        />
-        <div class="card-body text-center">
-          <h5 class="card-title">{{ character.name }}</h5>
-          <p class="card-text">
-            {{ character.archetype }}
-          </p>
-        </div>
-      </div> -->
       <CharacterCard
         v-for="character in store.characters"
         :key="character.id"
-        :image="character.image_url_small"
+        :image="character.card_images[0].image_url_small"
         :name="character.name"
         :archetype="character.archetype"
       >

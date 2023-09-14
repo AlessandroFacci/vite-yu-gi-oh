@@ -1,7 +1,7 @@
 <script>
 export default {
   props: {
-    // image: String,
+    image: String,
     name: String,
     archetype: String,
   },
@@ -10,7 +10,7 @@ export default {
 
 <template>
   <div class="col-3 card">
-    <!-- <img :src="Image" alt="img" /> -->
+    <img :src="image" alt="img" />
     <div class="card-body text-center">
       <h5 class="card-title">{{ name }}</h5>
       <p class="card-text">
