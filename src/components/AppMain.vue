@@ -1,5 +1,5 @@
 <script>
-import CharactersList from "./characters/CharactersList.vue";
+import CharactersList from "./characters/charactersList.vue";
 
 export default {
   components: { CharactersList },
